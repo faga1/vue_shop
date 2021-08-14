@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2724889 */
-  src: url('//at.alicdn.com/t/font_2724889_j8dql1u6bjr.woff2?t=1628153609137') format('woff2'),
-       url('//at.alicdn.com/t/font_2724889_j8dql1u6bjr.woff?t=1628153609137') format('woff'),
-       url('//at.alicdn.com/t/font_2724889_j8dql1u6bjr.ttf?t=1628153609137') format('truetype');
+  src: url('//at.alicdn.com/t/font_2724889_5672zjt9ovr.woff2?t=1628667218858') format('woff2'),
+       url('//at.alicdn.com/t/font_2724889_5672zjt9ovr.woff?t=1628667218858') format('woff'),
+       url('//at.alicdn.com/t/font_2724889_5672zjt9ovr.ttf?t=1628667218858') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dingdan:before {
+  content: "\e623";
+}
+
+.icon-quanxian:before {
+  content: "\e60a";
+}
+
+.icon-shujutongji:before {
+  content: "\e609";
+}
+
+.icon-shangpin:before {
+  content: "\e616";
+}
+
+.icon-users:before {
+  content: "\e8a2";
 }
 
 .icon-mima:before {
