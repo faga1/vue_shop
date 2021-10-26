@@ -80,7 +80,6 @@ export default {
       const { data: res } = await this.$http.get('roles')
       if (res.meta.status !== 200) return this.$message.error('获取角色列表失败')
       this.rolesList = res.data
-      console.log(this.rolesList);
     },
     async removeRightById(role, rightId) {
       const confirmResult = await this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
@@ -104,7 +103,6 @@ export default {
         return this.$message.error('获取权限失败')
       }
       this.rightsList = res.data
-      console.log(this.rightsList);
       this.getLeafKeys(role, this.defKey)
       this.SetRightDialogVisible = true
     },

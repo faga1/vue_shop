@@ -8,3 +8,6 @@ html,body,#app{
     margin-bottom: 15px;
     font-size: 12px;
 }
+.el-cascader-panel{
+    height: 300px;
+}

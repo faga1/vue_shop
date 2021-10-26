@@ -173,14 +173,12 @@ export default {
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.userlist = res.data.users
       this.total = res.data.total
-      console.log(res);
     },
     handleSizeChange(newsize) {
       this.queryInfo.pagesize = newsize
       this.getUserList()
     },
     handleCurrentChange(newpage) {
-      console.log(newpage);
       this.queryInfo.pagenum = newpage
       this.getUserList()
     },
@@ -214,7 +212,6 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).catch(err => err)
-      console.log(confirmResult);
       if (confirmResult !== 'confirm') {
         return this.$message.info('已取消删除')
       }
@@ -233,14 +230,12 @@ export default {
       }
       this.rolesList = res.data
       this.setRoleDialogVisible = true
-      console.log(this.userInfo);
     },
     async saveRoleSetting() {
       if (!this.selectedRoleId) {
         return this.$message.error('请选择新角色')
       }
       const { data: res } = await this.$http.put(`users/${this.userInfo.id}/role`, { rid: this.selectedRoleId })
-      console.log(res);
       if (res.meta.status !== 200) {
         return this.$message.error('设置角色失败')
       }
