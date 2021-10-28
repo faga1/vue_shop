@@ -4,6 +4,7 @@
         <div>
             <img src='../assets/heima.png'>
             <span>电商后台管理系统</span>
+            <span>hello</span>
         </div>
         <el-button type='info' @click="logout">退出</el-button></el-header>
     <el-container>
